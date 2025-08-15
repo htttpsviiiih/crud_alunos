@@ -4,6 +4,7 @@ require_once(__DIR__ . "/../../model/Aluno.php");
 require_once(__DIR__ . "/../../controller/AlunoController.php");
 
 $msgErro = "";
+$aluno = null;
 
 //Receber os dados do formulário
 if(isset($_POST['nome'])) {

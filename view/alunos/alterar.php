@@ -13,7 +13,7 @@ if (isset($_POST['nome'])) {
     // 1- capturar os dados do formulario
 
     if (isset($_POST['nome'])) {
-        //Usuário já clicou no gravar
+        $id = 0; ///chegar por post
         $nome  = trim($_POST['nome']) ? trim($_POST['nome']) : null;
         $idade = is_numeric($_POST['idade']) ? $_POST['idade'] : null;
         $estrangeiro = trim($_POST['estrang']) ? trim($_POST['estrang']) : null;
@@ -21,6 +21,7 @@ if (isset($_POST['nome'])) {
 
         //Criar um objeto Aluno para persistí-lo
         $aluno = new Aluno();
+        $aluno ->setId($id);
         $aluno->setNome($nome);
         $aluno->setIdade($idade);
         $aluno->setEstrangeiro($estrangeiro);

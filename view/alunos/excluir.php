@@ -21,6 +21,9 @@ if ($aluno) {
       header('location: listar.php');
       exit;
    }
+}else{
+   echo "Aluno não encontrado!<br>";
+   echo "<a href = 'listar.php'>Voltar</a>";
 }
 
 //3- Verfica se deu erro

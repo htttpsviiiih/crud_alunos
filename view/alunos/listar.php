@@ -15,10 +15,10 @@
 <h3>Listagem de Alunos</h3> 
 
 <div>
-    <a href="inserir.php">Inserir</a>
+    <a class="" href="inserir.php">Inserir</a>
 </div>
 
-<table border="1">
+<table class="table table-striped">
     <!-- Cabeçalho -->
     <tr>
         <th>ID</th>
